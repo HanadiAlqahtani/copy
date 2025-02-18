@@ -1,3 +1,4 @@
+this readme is from this repo (https://github.com/Abdelrahman-Fakhry-Hussein/SpeCor-Speech-Recognition-and-Stutter-Correction-Graduation-Project)  
 # SpeCor: Specialized Correction for Enhanced ASR
 
 Automatic Speech Recognition (ASR) technology has significantly advanced, yet it struggles with accurately transcribing speech from individuals with disorders like stuttering and lisping. SpeCor addresses these limitations by incorporating specialized correction mechanisms for these disorders, enhancing ASR accuracy and communication accessibility.
