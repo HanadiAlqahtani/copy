@@ -1,0 +1,1178 @@
+/* /* Importing Google Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Body Style 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container for Layout 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header 
+header {
+    background-color: #86aa9c; /* Muted Green 
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+header .logo img {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #045e51; /* Dark Teal on hover 
+}
+
+/* Main Content Sections 
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Layout for Tools and About 
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #86aa9c; /* Muted Green 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #7a9c87; /* Slightly darker Muted Green *
+}
+
+/* FAQ Section 
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #dfe6e9;
+}
+
+.faq-answer {
+    display: none; /* Hide answers by default *
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0;
+}
+
+/* Footer *
+footer {
+    background-color: #86aa9c; /* Muted Green *
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contact Section *
+#contact {
+    background-color: #fff;
+    padding: 60px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#contact h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the form *
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #86aa9c; /* Muted Green *
+    outline: none;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    height: 45px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Increase height for textarea *
+    resize: vertical; /* Allow user to resize *
+}
+
+.contact-form button.submit-btn {
+    padding: 12px 20px;
+    background-color: #86aa9c; /* Muted Green *
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    align-self: center; /* Center the button *
+}
+
+.contact-form button.submit-btn:hover {
+    background-color: #7a9c87; /* Slightly darker Muted Green *
+    transform: scale(1.05); /* Slight zoom effect *
+}
+
+.contact-form button.submit-btn:active {
+    transform: scale(1); /* Button returns to original size *
+}
+
+/* Speech Tool Section *
+#speech-tool-container {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box for holding both the icon and button *
+.speech-tool-box {
+    display: flex;
+    justify-content: center; /* Center everything inside the box *
+    align-items: center;
+    background-color: #f9f9f9; /* Light background similar to Contact Us *
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content of the box *
+    flex-direction: column; /* Stack items vertically *
+    gap: 30px; /* Space between icon and button *
+}
+
+/* Left Section - Placeholder for Icon *
+.speech-tool-left {
+    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speech-tool-left .icon-placeholder {
+    width: 100%;  /* Make container width responsive *
+    max-width: 300px;  /* Limit max width *
+    height: auto;  /* Allow height to adjust automatically *
+    background-color: transparent; /* No background color *
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflowing content *
+}
+
+.speech-tool-left .icon-placeholder img {
+    width: 100%;  /* Make the image responsive *
+    height: auto; /* Keep the aspect ratio of the image *
+    object-fit: contain; /* Ensure the entire image fits within the container *
+}
+
+/* Right Section - Recording Result and Microphone Button *
+.speech-tool-right {
+    flex: 2;
+    width: 100%;
+}
+
+/* Recording Result Section *
+.recording-result {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    min-height: 40px;
+}
+
+.recording-result p {
+    margin: 0;
+    color: #555; /* Lighter text for readability *
+}
+
+/* Microphone Button *
+.microphone-btn {
+    background-color: #86aa9c; /* Muted Green *
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.microphone-btn:hover {
+    background-color: #7a9c87; /* Slightly darker Muted Green *
+    transform: scale(1.05);
+}
+
+.microphone-btn:active {
+    transform: scale(1);
+}
+
+
+/* Media Queries for Small Screens *
+@media (max-width: 768px) {
+    .speech-tool-box {
+        flex-direction: column;  /* Stack icon and button vertically *
+        padding: 20px;  /* Adjust padding for smaller screens *
+    }
+
+    .speech-tool-left .icon-placeholder {
+        max-width: 200px;  /* Reduce max width on small screens *
+        margin-bottom: 20px;  /* Add space between icon and button *
+    }
+
+    .microphone-btn {
+        padding: 12px 25px;  /* Adjust button size *
+        font-size: 16px;  /* Adjust font size *
+    }
+
+    .recording-result {
+        font-size: 14px;  /* Reduce text size on small screens *
+        padding: 10px;  /* Adjust padding *
+    }
+}
+
+@media (max-width: 480px) {
+    .speech-tool-left .icon-placeholder {
+        max-width: 150px;  /* Further reduce image size *
+    }
+
+    .microphone-btn {
+        padding: 10px 20px;  /* Further reduce button size *
+        font-size: 14px;  /* Further reduce font size *
+    }
+}
+
+/* Logo Style in Header */
+/* Header *
+header {
+    background-color: #86aa9c; /* Muted Green *
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+header .logo img {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #045e51; /* Dark Teal on hover *
+}
+
+
+/* Additional Styles for Text-to-Speech Section *
+#text-to-speech-container {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-to-speech-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #86aa9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a9c87;
+}
+
+.result-section {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+audio {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Timer Circle *
+#timer-circle {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid #86aa9c; /* Muted Green *
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Game Button *
+.game-btn {
+    background-color: #86aa9c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-btn:hover {
+    background-color: #7a9c87;
+} 
+
+*/
+
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Body Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container for Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #86aa9c; /* Muted Green */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+header .logo img {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #045e51; /* Dark Teal on hover */
+}
+
+/* Main Content Sections */
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Layout for Tools and About */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #86aa9c; /* Muted Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #7a9c87; /* Slightly darker Muted Green */
+}
+
+/* FAQ Section */
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #dfe6e9;
+}
+
+.faq-answer {
+    display: none; /* Hide answers by default */
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #86aa9c; /* Muted Green */
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 60px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#contact h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} 
+
+
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #86aa9c; /* Muted Green */
+    outline: none;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    height: 45px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Increase height for textarea */
+    resize: vertical; /* Allow user to resize */
+}
+
+.contact-form button.submit-btn {
+    padding: 12px 20px;
+    background-color: #86aa9c; /* Muted Green */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    align-self: center; /* Center the button */
+}
+
+.contact-form button.submit-btn:hover {
+    background-color: #7a9c87; /* Slightly darker Muted Green */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.contact-form button.submit-btn:active {
+    transform: scale(1); /* Button returns to original size */
+}
+
+/* Speech Tool Section */
+#speech-tool-container {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box for holding both the icon and button */
+.speech-tool-box {
+    display: flex;
+    justify-content: center; /* Center everything inside the box */
+    align-items: center;
+    background-color: #f9f9f9; /* Light background similar to Contact Us */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content of the box */
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px; /* Space between icon and button */
+}
+
+/* Left Section - Placeholder for Icon */
+.speech-tool-left {
+    margin-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speech-tool-left .icon-placeholder {
+    width: 100%;  /* Make container width responsive */
+    max-width: 300px;  /* Limit max width */
+    height: auto;  /* Allow height to adjust automatically */
+    background-color: transparent; /* No background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.speech-tool-left .icon-placeholder img {
+    width: 100%;  /* Make the image responsive */
+    height: auto; /* Keep the aspect ratio of the image */
+    object-fit: contain; /* Ensure the entire image fits within the container */
+}
+
+/* Right Section - Recording Result and Microphone Button */
+.speech-tool-right {
+    flex: 2;
+    width: 100%;
+}
+
+/* Recording Result Section */
+.recording-result {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    min-height: 40px;
+}
+
+.recording-result p {
+    margin: 0;
+    color: #555; /* Lighter text for readability */
+}
+
+/* Microphone Button */
+.microphone-btn {
+    background-color: #86aa9c; /* Muted Green */
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.microphone-btn:hover {
+    background-color: #7a9c87; /* Slightly darker Muted Green */
+    transform: scale(1.05);
+}
+
+.microphone-btn:active {
+    transform: scale(1);
+}
+
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .speech-tool-box {
+        flex-direction: column;  /* Stack icon and button vertically */
+        padding: 20px;  /* Adjust padding for smaller screens */
+    }
+
+    .speech-tool-left .icon-placeholder {
+        max-width: 200px;  /* Reduce max width on small screens */
+        margin-bottom: 20px;  /* Add space between icon and button */
+    }
+
+    .microphone-btn {
+        padding: 12px 25px;  /* Adjust button size */
+        font-size: 16px;  /* Adjust font size */
+    }
+
+    .recording-result {
+        font-size: 14px;  /* Reduce text size on small screens */
+        padding: 10px;  /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .speech-tool-left .icon-placeholder {
+        max-width: 150px;  /* Further reduce image size */
+    }
+
+    .microphone-btn {
+        padding: 10px 20px;  /* Further reduce button size */
+        font-size: 14px;  /* Further reduce font size */
+    }
+}
+
+/* Logo Style in Header */
+/* Header */
+header {
+    background-color: #86aa9c; /* Muted Green */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+header .logo img {
+    height: 150px;
+    width: auto;
+    display: block;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #045e51; /* Dark Teal on hover */
+}
+
+
+/* Additional Styles for Text-to-Speech Section */
+#text-to-speech-container {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-to-speech-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #86aa9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a9c87;
+}
+
+.result-section {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+audio {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Timer Circle */
+#timer-circle {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid #86aa9c; /* Muted Green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Game Button */
+.game-btn {
+    background-color: #86aa9c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-btn:hover {
+    background-color: #7a9c87;
+}
+
